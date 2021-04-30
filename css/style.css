@@ -1,0 +1,632 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@700&family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+/* SCROLLBAR */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: #0d4b48;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+      background: #2ccac2; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #167e79;
+}
+
+.shrink h1 {
+  padding: 1rem 0 1.1rem 0;
+}
+.shrink .linkit {
+  margin-top: 20px;
+}
+
+/* MAIN */
+
+html, body {
+  width: 100%;
+  color: #3c3c3c;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 1.6em;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f5f0f3;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.ylapalkki, main, footer, .header {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+
+/* TYPOGRAFIA */
+
+
+main a {
+  color: #10a2b6;
+}
+
+main a:hover {
+ color: #0ea0a5;
+ text-decoration: none;
+
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Overpass', sans-serif;  
+  /* font-family: 'Antonio', sans-serif; */
+}
+
+h1 {
+  color: #464646;
+  font-family: 'Overpass', sans-serif;  
+  font-size: 2.9em;
+  font-weight: 600;
+  margin: 0 0;
+  padding: 2rem 0 2rem 0;
+  transition: .3s all;
+  text-decoration: none;
+}
+
+
+h2, h3, h4 {
+  color: #484848;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h2 {
+  text-shadow: 1px 0px 3px rgba(88, 88, 88, 0.11);
+  font-family: 'Overpass', sans-serif;  
+
+}
+
+h2, h3 {
+  font-size: 2.1em;
+  font-weight: 700;
+  font-family: 'Overpass', sans-serif;  
+  margin-bottom: 15px;
+  font-weight: 400;
+  color: #5d5d5d;
+  letter-spacing: 4px;
+  width: 100%;
+}
+
+h3 {
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  border-bottom: 3px solid #e4e4e4;
+}
+
+.pieni {
+  margin-left: 30px;
+  font-size: 1.2em;
+  color: #03302d;
+  font-family: 'Cormorant Upright', serif;
+  padding: 0;
+  letter-spacing: 1px;
+}
+
+#malli {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 17rem;
+  height: 25rem;
+}
+
+#malli h1 {
+  font-family: Bebas, sans-serif;
+  font-weight: 400;
+  color: white;
+  position: absolute;
+  font-size: 12.5rem;
+  text-shadow: 1px 0px 4px rgba(8, 8, 8, 0.11);
+}
+
+
+span.sininen {
+  color: #15b6ae;
+}
+
+/* YLÄPALKKI */
+.ylapalkki {
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  background-color: #fff;
+  top: 0;
+  padding: 0 0;
+  position: fixed;
+  transition: .4s all;
+}
+
+/* NAVIGAATIO */
+
+.linkit {
+  margin-top: 35px;
+  max-width: 100%;
+  padding: 0;
+  list-style-type: none;
+  overflow: hidden;
+}
+
+ul.linkit li {
+  float: left;
+  transition: 0.2s;
+}
+
+ul.linkit li:hover {
+  background-color: #a7a7a7;
+}
+
+ul.linkit li a {
+  display: block;
+  color: #5f5f5f;
+  text-align: center;
+  padding: 12px 12px;
+  text-decoration: none;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 900;
+  transition: 0.2s;
+  font-family: 'Overpass', sans-serif;
+  }
+
+ul.linkit li a:hover {
+  color: #fff;
+}
+
+.nimi {
+  margin-left: 50px;
+}
+
+/* HEADER */
+
+#otsikko {
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  max-width: 500px;
+  margin-left: 100px;
+  top: calc(45% + 80px);
+}
+
+#otsikko h2 {
+  color: #fff;
+  font-size: 3.0em;
+  line-height: 130%;
+}
+
+#otsikko .alaotsikko {
+  margin-left: 50px;
+  font-size: 1.3em;
+  color: #0d4b48;
+  font-weight: 500;
+  font-family: 'Lobster', cursive;
+  padding: 0;
+  letter-spacing: 1px;
+}
+
+#otsikko p.alaotsikko:before {
+  border-color: #fff;
+  width: 60px;
+}
+
+.header .row {
+  max-width: 100%;
+  width: calc(100% - 40px);
+  padding: 0;
+}
+
+.boxi .row {
+  padding: 0px 20px 0px 20px;
+}
+
+.header {
+  background-image: url(../img/IMG_8992.jpg);  
+  background-position: center;
+  height: 600px;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  border-bottom:7px solid #fff;
+}
+.header1 {
+  background-image: url(../img/IMG_7199.jpg);  
+  background-position: center;
+  height: 400px;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+}
+.overlay {
+  background-color: transparent;
+  background-image: linear-gradient(90deg, #31beacd8 10%, rgba(65,64,66,0) 100%);
+  opacity: 0.72;
+  height: 100%;
+  width: 100%;
+}
+
+.overlay1 {
+  background-color: transparent;
+  background-image: linear-gradient(-90deg, #19b19cec 10%, rgba(65,64,66,0) 100%);
+  opacity: 0.72;
+  height: 100%;
+  width: 100%;
+}
+
+.boxi {
+  margin: 20px;
+  padding: 20px 20px 0 20px;
+  background-color: #f7f7f7;
+  font-family: 'Overpass', sans-serif;
+  font-size: 1.0em;
+}
+
+.boxi2 {
+  text-align: center;
+  margin-top: 20px;
+  padding: 5px;
+  background-color: #252525e5;
+  font-family: 'Overpass', sans-serif;
+  font-size: 1.0em;
+}
+
+/* HIENOSÄÄTÖ */
+
+.kuva {
+	border: 5px solid #fff;
+	box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.5);
+
+}
+
+.kuva:hover {
+	opacity: 70%;
+	transition: 0.5s ease;
+}
+
+.viiva {
+  border-left: 5px solid #5f5f5f;
+}
+.nappi2 {
+  color: rgb(59, 59, 59);
+  font-family: 'Overpass', sans-serif; 
+  background-color: #f5f5f5f3;
+  border: #e4e4e4ec solid 2px;
+  text-transform: uppercase;
+  border-radius: 20px 0 20px 0;
+  padding: 10px 10px 10px 10px;
+  display: inline-block;
+  font-weight: 900;
+  font-size: 15px;
+  text-align: left;
+  transition: .3s all;
+  letter-spacing: 1px;
+}
+
+.nappi2:hover {
+  /* background-color: transparent; */
+  background-color: #ffffff;
+  color: #161616;
+}
+.center {
+  text-align: center;
+}
+
+.nuoli {
+  text-decoration: transparent;
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+span.bold {
+  font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+
+/* COLLAPSE */
+
+.iso .btn-primary {
+  color: #fff !important;
+  font-family: 'Overpass', sans-serif !important; 
+  background-color: #535353 !important;
+  border: #5d5d5d31 solid 2px !important;
+  text-decoration: none !important;
+  text-transform: uppercase !important;
+  padding: 10px 30px 10px 30px !important;
+  display: inline-block !important;
+  font-weight: 400 !important;
+  font-size: 15px !important;
+  margin: 10px 10px 0px 10px !important;
+  transition: .3s all !important;
+  letter-spacing: 1px !important;
+  border-radius: 0 !important;
+
+}
+.iso .btn-primary:hover {
+  background-color: #ffffff !important;
+  color: #202020 !important;
+}
+
+.iso .card-body {
+  flex: 1 1 auto;
+  padding: 1rem 1rem;
+  border-radius: 0px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* FOOTER */
+
+footer {
+  width: 100%;    
+  background-color: #252525e5;
+  /* border-top: 10px solid rgba(118, 146, 150, 0.2); */
+  background-clip: padding-box;
+}
+
+.footer-sisalto {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 10px 0px 20px 0px;
+  text-align: center;
+}
+p.copyright, p.copyright2 {
+  font-family: 'Overpass', sans-serif;
+  color: #f3f3f3;
+  line-height: 0.3;
+  margin: 17px 0px 10px 20px;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  display: block;
+  text-align: left;
+}
+p.copyright2 {
+  color: #fff;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+.kirje a {
+  display: inline-block;
+  font-family: 'Overpass', sans-serif;
+  color: #00e1ff;
+  line-height: 0.3;
+  font-size: 14px;
+  font-weight: 900;
+  padding: 0px 5px 0px 5px;
+  text-transform: uppercase;
+}
+.kirje a:hover {
+  color: #f3f3f3;
+}
+p.sisalto {
+  color: #ffffff;
+  font-family: 'Overpass', sans-serif;  
+  font-size: 1.7em;
+  margin-left: 20px;
+  font-weight: 600;
+  transition: .3s all;
+  text-decoration: none;
+  text-align: left;
+}
+p.sisalto2 {
+  margin-top: 0px;
+  color: #cacaca;
+}
+p.sisalto2, p.sisalto3 {
+  font-family: 'Overpass', sans-serif;
+  line-height: 1.4;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 1.1px;
+  display: block;
+  text-align: left;
+}
+p.sisalto3 {
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #f3f3f3;
+}
+
+.icon {
+  color: #fff;
+  font-size: 2.0em;
+  padding: 10px;
+}
+
+/* KELLO */
+
+div.clock {
+  margin: 0;
+}
+.clock {
+  font-family: 'Overpass', sans-serif;
+  color: #ffffff7e;
+  padding: 0px 5px 0px 5px;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 900;
+  text-transform: uppercase;
+  display: inline-block;
+  letter-spacing: 1px;
+}
+
+
+/* BUTTON */
+#myBtn {
+  width: 2.3rem;
+  height: 2.2rem;
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #009e91b7; /* Set a background color */
+  color: white; /* Text color */
+  padding-top: 5px;
+  cursor: pointer; /* Add a mouse pointer on hover */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  transition: 0.2s ease;
+}
+
+#myBtn:hover {
+  background-color: rgba(212, 212, 212, 0.685); /* Add a dark-grey background on hover */
+}
+
+/* MEDIA */
+@media only screen and (max-width: 1300px) {
+  .linkit {
+    margin-top: 35px;
+    max-width: 100%;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+  }
+  
+  ul.linkit li {
+    float: left;
+    transition: 0.2s;
+    width: 25%;
+  }
+  
+  ul.linkit li:hover {
+    background-color: #a7a7a7;
+  }
+  
+  ul.linkit li a {
+    display: block;
+    color: #5f5f5f;
+    text-align: center;
+    padding: 12px 12px;
+    text-decoration: none;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 900;
+    transition: 0.2s;
+    font-family: 'Overpass', sans-serif;
+    }
+  
+  ul.linkit li a:hover {
+    color: #fff;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .nimi {
+    font-size: 3.7em;
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .nimi {
+    /* background-color: pink; */
+    font-family: 'Overpass', sans-serif;  
+    font-size: 2.4em;
+    font-weight: 300;
+    margin-top: 10px;
+    padding: 0;
+  }
+
+  #otsikko {
+    font-size: 90%;
+    max-width: 450px;
+    margin-left: 10px;
+  }
+  #otsikko h2 {
+    color: #fff;
+    font-size: 2.3em;
+    line-height: 130%;
+  }
+  #otsikko .alaotsikko {
+    color: #fff;
+    font-size: 1.3em;
+    text-shadow: 0 0 0 transparent;
+  }
+  .boxi {
+    max-width: 100%;
+  }
+  .linkit {
+    margin-top: 25px;
+    max-width: 100%;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+  } 
+  ul.linkit li {
+    float: left;
+    transition: 0.2s;
+    margin: 5px 10px 5px 10px;
+  }
+  ul.linkit li:hover {
+    background-color: transparent;
+  }
+  ul.linkit li a {
+    color: #5f5f5f;
+    text-align: center;
+    padding: 6px 0px 6px 0px;
+    text-decoration: none;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 900;
+    transition: 0.2s;
+    font-family: 'Overpass', sans-serif;
+    }
+  
+  ul.linkit li a:hover {
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+  }
+
+  .shrink h1 {
+    padding: 1rem 0 0.1rem 0;
+  }
+  .shrink .linkit {
+    margin-top: 0px;
+  }
+  #malli h1 {
+    font-weight: 400;
+    font-size: 99%;
+  }
+  .viiva {
+    border: none;
+  }
+}
